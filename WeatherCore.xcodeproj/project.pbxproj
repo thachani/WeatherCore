@@ -17,6 +17,14 @@
 		DC1A50CF24E810B8000020C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1A50CE24E810B8000020C2 /* Preview Assets.xcassets */; };
 		DC1A50D224E810B8000020C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1A50D024E810B8000020C2 /* LaunchScreen.storyboard */; };
 		DC1A50DD24E810B8000020C2 /* DemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50DC24E810B8000020C2 /* DemoAppTests.swift */; };
+		DC1A50E624E841E5000020C2 /* WeatherDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50E524E841E5000020C2 /* WeatherDataManager.swift */; };
+		DC1A50EA24E8423D000020C2 /* WeatherRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50E924E8423D000020C2 /* WeatherRequest.swift */; };
+		DC1A50ED24E8433D000020C2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50EC24E8433D000020C2 /* Weather.swift */; };
+		DC1A50F224E84FAF000020C2 /* WeatherDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50F124E84FAF000020C2 /* WeatherDay.swift */; };
+		DC1A50F524E918DA000020C2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50F424E918DA000020C2 /* NetworkManager.swift */; };
+		DC1A50F724E95B31000020C2 /* WeatherSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50F624E95B31000020C2 /* WeatherSummary.swift */; };
+		DC1A50F924E95E3D000020C2 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50F824E95E3D000020C2 /* CurrentWeather.swift */; };
+		DC1A50FB24E97911000020C2 /* WeatherDayTemp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1A50FA24E97911000020C2 /* WeatherDayTemp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +62,14 @@
 		DC1A50D824E810B8000020C2 /* DemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1A50DC24E810B8000020C2 /* DemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppTests.swift; sourceTree = "<group>"; };
 		DC1A50DE24E810B8000020C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC1A50E524E841E5000020C2 /* WeatherDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataManager.swift; sourceTree = "<group>"; };
+		DC1A50E924E8423D000020C2 /* WeatherRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRequest.swift; sourceTree = "<group>"; };
+		DC1A50EC24E8433D000020C2 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		DC1A50F124E84FAF000020C2 /* WeatherDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDay.swift; sourceTree = "<group>"; };
+		DC1A50F424E918DA000020C2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		DC1A50F624E95B31000020C2 /* WeatherSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSummary.swift; sourceTree = "<group>"; };
+		DC1A50F824E95E3D000020C2 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		DC1A50FA24E97911000020C2 /* WeatherDayTemp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDayTemp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +130,10 @@
 		DC1A50A724E80F3E000020C2 /* WeatherCore */ = {
 			isa = PBXGroup;
 			children = (
+				DC1A50F324E918BC000020C2 /* NetworkManager */,
+				DC1A50EB24E84324000020C2 /* Models */,
+				DC1A50E824E841F8000020C2 /* Services */,
+				DC1A50E724E841EF000020C2 /* Managers */,
 				DC1A50A824E80F3E000020C2 /* WeatherCore.h */,
 				DC1A50A924E80F3E000020C2 /* Info.plist */,
 			);
@@ -158,6 +178,42 @@
 				DC1A50DE24E810B8000020C2 /* Info.plist */,
 			);
 			path = DemoAppTests;
+			sourceTree = "<group>";
+		};
+		DC1A50E724E841EF000020C2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A50E524E841E5000020C2 /* WeatherDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DC1A50E824E841F8000020C2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A50E924E8423D000020C2 /* WeatherRequest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DC1A50EB24E84324000020C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A50EC24E8433D000020C2 /* Weather.swift */,
+				DC1A50F124E84FAF000020C2 /* WeatherDay.swift */,
+				DC1A50F624E95B31000020C2 /* WeatherSummary.swift */,
+				DC1A50F824E95E3D000020C2 /* CurrentWeather.swift */,
+				DC1A50FA24E97911000020C2 /* WeatherDayTemp.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DC1A50F324E918BC000020C2 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				DC1A50F424E918DA000020C2 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +313,7 @@
 				TargetAttributes = {
 					DC1A50A424E80F3E000020C2 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 					DC1A50AD24E80F3E000020C2 = {
 						CreatedOnToolsVersion = 11.3.1;
@@ -330,6 +387,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1A50F524E918DA000020C2 /* NetworkManager.swift in Sources */,
+				DC1A50EA24E8423D000020C2 /* WeatherRequest.swift in Sources */,
+				DC1A50ED24E8433D000020C2 /* Weather.swift in Sources */,
+				DC1A50FB24E97911000020C2 /* WeatherDayTemp.swift in Sources */,
+				DC1A50F924E95E3D000020C2 /* CurrentWeather.swift in Sources */,
+				DC1A50F224E84FAF000020C2 /* WeatherDay.swift in Sources */,
+				DC1A50F724E95B31000020C2 /* WeatherSummary.swift in Sources */,
+				DC1A50E624E841E5000020C2 /* WeatherDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +574,7 @@
 		DC1A50BA24E80F3E000020C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -516,6 +582,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WeatherCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -525,6 +592,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -533,6 +601,7 @@
 		DC1A50BB24E80F3E000020C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -540,6 +609,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WeatherCore/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -557,6 +627,7 @@
 		DC1A50BD24E80F3E000020C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WeatherCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -574,6 +645,7 @@
 		DC1A50BE24E80F3E000020C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = WeatherCoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,6 +668,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -615,6 +688,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"DemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
