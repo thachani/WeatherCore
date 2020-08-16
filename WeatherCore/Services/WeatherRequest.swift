@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct WeatherRequest {
+struct WeatherRequest: Equatable {
     private let apiKey = "6cd70baf89887625a69fe375c4d7d0e7"
     private let baseUrl = URL(string: "https://api.openweathermap.org/data/2.5/onecall")!
     let latitude: Double
