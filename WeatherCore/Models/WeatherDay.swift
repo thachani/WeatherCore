@@ -22,10 +22,10 @@ public struct WeatherDay: Decodable {
 
     // MARK: - Properties
 
-    let time: Date
-    let windSpeed: Double
-    let temp: WeatherDayTemp
-    let weatherSummary: [WeatherSummary]
+    public let time: Date
+    public let windSpeed: Double
+    public let temp: WeatherDayTemp
+    public let weatherSummary: [WeatherSummary]
 
     // MARK: - Initialization
 

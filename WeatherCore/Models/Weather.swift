@@ -23,16 +23,16 @@ public struct Weather: Decodable {
 
     // MARK: - Properties
 
-    let latitude: Double
-    let longitude: Double
+  public  let latitude: Double
+  public  let longitude: Double
 
     // MARK: -
 
-    let currently: CurrentWeather
+  public  let currently: CurrentWeather
 
     // MARK: -
 
-    let daily: [WeatherDay]
+  public  let daily: [WeatherDay]
 
     // MARK: - Initialization
 

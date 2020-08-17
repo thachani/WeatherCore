@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct WeatherDayTemp: Decodable {
+public struct WeatherDayTemp: Decodable {
     
     // MARK: - Types
     
@@ -19,8 +19,8 @@ struct WeatherDayTemp: Decodable {
     
     // MARK: - Properties
     
-    let min: Double
-    let max: Double
+   public let min: Double
+   public  let max: Double
     
     // MARK: - Initialization
     

@@ -22,11 +22,11 @@ public struct CurrentWeather: Decodable {
     
     // MARK: - Properties
     
-    let time: Date
-    let temperature: Double
-    let windSpeed: Double
+   public let time: Date
+   public let temperature: Double
+   public let windSpeed: Double
     
-    let weather: [WeatherSummary]
+   public let weather: [WeatherSummary]
     
     // MARK: - Initialization
     

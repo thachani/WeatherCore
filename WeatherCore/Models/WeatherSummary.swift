@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct WeatherSummary: Decodable{
+public struct WeatherSummary: Decodable{
 
     //MARK: -Types
     enum CodingKeys: String, CodingKey {
@@ -19,8 +19,8 @@ struct WeatherSummary: Decodable{
 
     //MARK: - Properties
 
-    let icon: String
-    let description: String
+  public  let icon: String
+  public  let description: String
 
     // MARK: - Initialization
 
