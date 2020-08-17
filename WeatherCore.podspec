@@ -3,7 +3,7 @@ Pod::Spec.new do |spec|
 
 
   spec.name         = "WeatherCore"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Weather data component "
 
   spec.description  = <<-DESC
